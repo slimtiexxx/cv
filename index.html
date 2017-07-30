@@ -6,7 +6,9 @@
 
 	<head>
 
-		<base href="public_html/">
+		<script>
+            document.write('<base href="' + document.location + '" />');
+		</script>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>AngularJS Boilerplate</title>
