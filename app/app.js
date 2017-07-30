@@ -34,7 +34,10 @@
    */
   function config($routeProvider, $locationProvider, $httpProvider, $compileProvider) {
 
-    $locationProvider.html5Mode(false);
+     $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+     });
 
     // routes
     $routeProvider
