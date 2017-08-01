@@ -6,15 +6,19 @@ Buttons
 
 .btn {
   min-width: 300px;
-  padding: 0 30px;
+  padding: 10px 30px;
   line-height: 50px;
   height: 50px;
   text-align: center;
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: $color-beige;
   border: 1px solid $color-white;
   color: $color-white;
   border-radius: $project-default-border-radius;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &--primary {
 

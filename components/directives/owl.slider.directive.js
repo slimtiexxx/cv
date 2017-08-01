@@ -39,12 +39,13 @@
         scope.$watch(function() {
           angular.element(document).ready(function() {
             $('.slider').owlCarousel({
-              autoPlay: 2500,
+              autoPlay: false,
               items: 1,
               //singleItem: true,
               margin: 0,
               nav: true,
               dots: false,
+              responsive: false,
               navText: '',
               pauseOnHover: true
             });
