@@ -15,6 +15,7 @@ GENERAL STYLES
 	padding-right: 15px;
 }
 
+
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -147,7 +148,8 @@ HEADER STYLES
 	left: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	z-index: 10;
 
 	> .btn {
@@ -532,11 +534,147 @@ MAIN PAGE
 		.btn {
 			bottom: 0;
 			position: absolute;
+
+			@media only screen and (max-width: 768px) {
+				position: relative;
+			}
 		}
 	}
 }
 
-/* desktop and mobile images END */
+.skills {
+	&-wrapper {
+		background-color: #585350;
+	}
+
+	h2 {
+		color: $color-white;
+		text-align: right;
+
+		&:after {
+			background-color: $color-white;
+			left: inherit;
+			right: 0;
+		}
+	}
+}
+
+.levels {
+	margin: 60px auto;
+	overflow: hidden;
+	display: flex;
+
+	> div {
+		height: 15px;
+		width: 25%;
+
+		&:nth-child(1) {
+			background-color: skyblue;
+		}
+
+		&:nth-child(2) {
+			background-color: blue;
+		}
+
+		&:nth-child(3) {
+			background-color: darkred;
+		}
+
+		&:nth-child(4) {
+			background-color: purple;
+		}
+	}
+}
+
+.dropdown {
+	margin-bottom: 20px;
+
+	@media only screen and (min-width: 768px) {
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 10px;
+		float: left;
+
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+	}
+
+	&__head {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: $color-beige;
+		text-align: center;
+		color: $color-white;
+		min-height: 100px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		font-weight: bold;
+		font-size: 2.4em;
+
+		.icon {
+			width: 60px;
+			height: 60px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.level {
+			font-size: 0.5em;
+
+			&--basic {
+				color: skyblue;
+			}
+
+			&--medium {
+				color: blue;
+			}
+
+			&--advanced {
+				color: darkred;
+			}
+
+			&--expert {
+				color: purple;
+			}
+		}
+	}
+
+	&__content {
+
+	}
+}
+
+.about {
+	&-wrapper {
+		background-color: $color-white;
+	}
+}
+
+.contact {
+	&-wrapper {
+		background-color: #585350;
+	}
+
+	h2 {
+		text-align: right;
+		color: $color-white;
+
+		&:after {
+			right: 0;
+			left: inherit;
+			background-color: $color-white;
+		}
+	}
+}
+
+/* desktop and mobile images START */
 
 .timeline-item {
 	padding: 3em 2em 2em;
@@ -549,7 +687,7 @@ MAIN PAGE
 	}
 
 	@media only screen and (max-width: 481px) {
-		padding: 10px;
+		padding: 30px 0 10px 10px;
 	}
 
 	h1 {
@@ -598,6 +736,10 @@ MAIN PAGE
 		text-align: right;
 		margin-left: auto;
 
+		@media only screen and (max-width: 481px) {
+			padding: 30px 10px 10px 0;
+		}
+
 
 		&::before {
 			right: 2em;
@@ -614,6 +756,10 @@ MAIN PAGE
 // slider
 .slider {
 	margin-top: 100px;
+
+	@media only screen and (max-width: 768px) {
+		margin-top: 50px;
+	}
 }
 
 .image-slider {

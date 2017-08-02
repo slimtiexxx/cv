@@ -11,6 +11,31 @@
     .module('boilerplate')
     .controller('MainController', MainController);
 
+  angular
+      .module('boilerplate')
+      .controller("MailgunController", function($scope, $http) {
+
+          var mailgunUrl = "YOUR_DOMAIN_HERE";
+          var mailgunApiKey = window.btoa("api:key-YOUR_API_KEY_HERE")
+
+          $scope.send = function() {
+              $http({
+                  "method": "POST",
+                  "url": "https://api.mailgun.net/v3/" + mailgunUrl + "/messages",
+                  "headers": {
+                      "Content-Type": "application/x-www-form-urlencoded",
+                      "Authorization": "Basic " + mailgunApiKey
+                  },
+                  data: "from=" + "test@example.com" + "&to=" + "soeone@gmail.com" + "&subject=" + "MailgunTest" + "&text=" + "EmailBody"
+              }).then(function(success) {
+                  console.log("SUCCESS " + JSON.stringify(success));
+              }, function(error) {
+                  console.log("ERROR " + JSON.stringify(error));
+              });
+          }
+
+      })
+
   MainController.$inject = ['LocalStorage', 'QueryService'];
 
 
