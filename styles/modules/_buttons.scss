@@ -5,7 +5,7 @@ Buttons
 ******************************************************************/
 
 .btn {
-  min-width: 300px;
+  width: 290px;
   padding: 10px 30px;
   line-height: 50px;
   height: 50px;
@@ -20,7 +20,9 @@ Buttons
   align-items: center;
   justify-content: center;
 
-  &--primary {
-
+  &:hover,
+  &:focus {
+    color: $color-white;
+    text-decoration: none;
   }
 }

@@ -20,6 +20,13 @@ USAGE: @include transition(all 0.2s ease-in-out);
 	#{$property}: #{$value};
 }
 
+// TRANSITION
+@mixin css3-transition($what: all, $length: 1s, $easing: ease-in-out) {
+	@include css3-prefix('transition', $what $length $easing);
+}
+
+@mixin project-default-transition()			{ @include css3-transition(all, 0.5s, ease); will-change: transform, transition, opacity;};
+
 // FONT FACE
 @mixin css3-font-face($new-font-name, $new-font-filename) {
 	@font-face {

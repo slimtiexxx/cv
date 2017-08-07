@@ -1,7 +1,7 @@
 <div class="welcome text-center">
     <article class="welcome__title">
         <h1>Balázs András</h1>
-        <h2>Frontend Developer</h2>
+        <h2 translate>WELCOME.TITLE</h2>
     </article>
 
     <div class="welcome__profile"></div>
@@ -9,23 +9,31 @@
 
 <section class="education-wrapper container-fluid">
     <div class="education container">
-        <h2>
-            Education
+        <h2 translate>
+            EDUCATION.TITLE
         </h2>
 
-        <div class="timeline-item" date-is='20-07-1990'>
-            <h1>Bernáth Kálmán Commerce High School, <br> Vác (Hungary)</h1>
-            <p>
-                I learned the basics of commerce and marketing here.
-            </p>
-        </div>
+        <div class="timeline-wrapper">
+            <div class="timeline-item" date-is="{{ 'EDUCATION.FIRST.DATE' | translate}}">
+                <h1 translate>EDUCATION.FIRST.NAME</h1>
 
-        <div class="timeline-item" date-is='20-07-1990'>
-            <h1>VIK High School, <br> Budapest (Hungary)</h1>
-            <p>
-                I continued my education in Budapest, i took a guided tours that upgraded my communication skills. <br>
-                Here i graduated.
-            </p>
+                <p class="location" translate>EDUCATION.FIRST.LOCATION</p>
+                <p translate>
+                    EDUCATION.FIRST.DESCRIPTION
+                </p>
+            </div>
+
+            <div class="timeline-item" date-is="{{ 'EDUCATION.SECOUND.DATE' | translate}}">
+                <h1 translate>EDUCATION.SECOUND.NAME</h1>
+
+                <p class="location" translate>EDUCATION.SECOUND.LOCATION</p>
+                <p translate>
+                    EDUCATION.SECOUND.DESCRIPTION
+                </p>
+                <p translate>
+                    EDUCATION.SECOUND.DESCRIPTION.2
+                </p>
+            </div>
         </div>
 
         <div class="education__image"></div>
@@ -34,28 +42,56 @@
 
 <section class="experiences-wrapper container-fluid">
     <div class="experiences container">
-        <h2>
-            Experiences
+        <h2 translate>
+            EXPERIENES.TITLE
         </h2>
 
-        <div class="timeline-item timeline-item--right" date-is='27-06-2016 - Present'>
-            <h1>Freelancer <br> Budapest (Hungary)</h1>
-            <p>
-                Usually working with in team (Front-end, Back-end, and Designer).
-            </p>
-            <p>
-                I like to have private projects to work, which is a hobby project. <br> I can discover new techniques, processes, and the rest.
-            </p>
-        </div>
+        <div class="timeline-wrapper">
 
-        <div class="timeline-item timeline-item--right" date-is='01-12-2016 - Present'>
-            <h1>Frontend Developer / Sitebuilder <br> Budapest (Hungary)</h1>
-            <p>
-                Working with famous clients like Coca-Cola, Dreher, Sucafina etc...
-            </p>
-            <p>
-                I learned a lot especially using HTML5, CSS3 animations, and the techniques of building a full responsive Website, and Web application.
-            </p>
+            <div class="timeline-item timeline-item--right" date-is="{{ 'EXPERIENCES.FIRST.DATE' | translate}}">
+                <h1 translate>
+                    EXPERIENCES.FIRST.NAME
+                </h1>
+                <p class="location" translate>EXPERIENCES.FIRST.LOCATION</p>
+                <p class="company" translate>EXPERIENCES.FIRST.COMPANY</p>
+
+                <p translate>
+                    EXPERIENCES.FIRST.DESCRIPTION.1
+                </p>
+                <p translate>
+                    EXPERIENCES.FIRST.DESCRIPTION.2
+                </p>
+            </div>
+
+            <div class="timeline-item timeline-item--right" date-is="{{ 'EXPERIENCES.SECOUND.DATE' | translate}}">
+                <h1 translate>
+                    EXPERIENCES.SECOUND.NAME
+                </h1>
+                <p class="location" translate>EXPERIENCES.SECOUND.LOCATION</p>
+
+                <p translate>
+                    EXPERIENCES.SECOUND.DESCRIPTION.1
+                </p>
+                <p translate>
+                    EXPERIENCES.SECOUND.DESCRIPTION.2
+                </p>
+            </div>
+
+            <div class="timeline-item timeline-item--right" date-is="{{ 'EXPERIENCES.THIRD.DATE' | translate}}">
+                <h1 translate>
+                    EXPERIENCES.THIRD.NAME
+                </h1>
+                <p class="location" translate>EXPERIENCES.THIRD.LOCATION</p>
+                <p class="company" translate>EXPERIENCES.THIRD.COMPANY</p>
+
+                <p translate>
+                    EXPERIENCES.THIRD.DESCRIPTION.1
+                </p>
+                <p translate>
+                    EXPERIENCES.THIRD.DESCRIPTION.2
+                </p>
+            </div>
+
         </div>
 
         <div class="experiences__image"></div>
@@ -64,8 +100,8 @@
 
 <section class="references-wrapper container-fluid">
     <div class="references container">
-        <h2>
-            References
+        <h2 translate>
+            REFERENCES.TITLE
         </h2>
 
         <div myslider>
@@ -90,111 +126,7 @@
                     <article class="references__descripition col-12 offset-xl-6 col-xl-6 aos-init aos-animate" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
                         <div>
                             <h3>Apollo Energy Gum</h3>
-                            <p>Az oldal a Svéd Gyufa Kft. megbízásából készült. A weboldal egy bizonyos termékbemutató promóciós oldal, valamit erről az oldalról lehet tovább látogatni a Svédgyufa webshopjára is. Animációkat, és háttérmozgást érdemes figyelni. :)</p>
-                            <a class="btn btn--primary" href="http://apollogum.web02.dev7.gbart.hu/" target="_blank">Tovább az oldalra</a>
-                        </div>
-                    </article>
-                </div>
-
-
-                <div>
-                    <div class="references__img relative">
-
-                        <div class="references__img-wrapper relative">
-                            <div>
-                                <img class="references-desktop" src="images/references/references-desktop.png" alt="Desktop">
-                                <img class="references-img-desktop" src="images/references/references-desktop-03.jpg" alt="References Image Desktop">
-                            </div>
-                            <div class="mobile">
-                                <img class="references-mobile" src="images/references/references-mobile.png" alt="Mobile">
-                                <img class="references-img-mobile" src="images/references/references-mobile-03.jpg" alt="References Image Mobile">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <article class="references__descripition col-12 offset-xl-6 col-xl-6 aos-init aos-animate" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
-                        <div>
-                            <h3>Apollo Energy Gum</h3>
-                            <p>Az oldal a Svéd Gyufa Kft. megbízásából készült. A weboldal egy bizonyos termékbemutató promóciós oldal, valamit erről az oldalról lehet tovább látogatni a Svédgyufa webshopjára is. Animációkat, és háttérmozgást érdemes figyelni. :)</p>
-                            <a class="btn btn--primary" href="http://apollogum.web02.dev7.gbart.hu/" target="_blank">Tovább az oldalra</a>
-                        </div>
-                    </article>
-                </div>
-
-
-                <div>
-                    <div class="references__img relative">
-
-                        <div class="references__img-wrapper relative">
-                            <div>
-                                <img class="references-desktop" src="images/references/references-desktop.png" alt="Desktop">
-                                <img class="references-img-desktop" src="images/references/references-desktop-03.jpg" alt="References Image Desktop">
-                            </div>
-                            <div class="mobile">
-                                <img class="references-mobile" src="images/references/references-mobile.png" alt="Mobile">
-                                <img class="references-img-mobile" src="images/references/references-mobile-03.jpg" alt="References Image Mobile">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <article class="references__descripition col-12 offset-xl-6 col-xl-6 aos-init aos-animate" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
-                        <div>
-                            <h3>Apollo Energy Gum</h3>
-                            <p>Az oldal a Svéd Gyufa Kft. megbízásából készült. A weboldal egy bizonyos termékbemutató promóciós oldal, valamit erről az oldalról lehet tovább látogatni a Svédgyufa webshopjára is. Animációkat, és háttérmozgást érdemes figyelni. :)</p>
-                            <a class="btn btn--primary" href="http://apollogum.web02.dev7.gbart.hu/" target="_blank">Tovább az oldalra</a>
-                        </div>
-                    </article>
-                </div>
-
-
-                <div>
-                    <div class="references__img relative">
-
-                        <div class="references__img-wrapper relative">
-                            <div>
-                                <img class="references-desktop" src="images/references/references-desktop.png" alt="Desktop">
-                                <img class="references-img-desktop" src="images/references/references-desktop-03.jpg" alt="References Image Desktop">
-                            </div>
-                            <div class="mobile">
-                                <img class="references-mobile" src="images/references/references-mobile.png" alt="Mobile">
-                                <img class="references-img-mobile" src="images/references/references-mobile-03.jpg" alt="References Image Mobile">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <article class="references__descripition col-12 offset-xl-6 col-xl-6 aos-init aos-animate" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
-                        <div>
-                            <h3>Apollo Energy Gum</h3>
-                            <p>Az oldal a Svéd Gyufa Kft. megbízásából készült. A weboldal egy bizonyos termékbemutató promóciós oldal, valamit erről az oldalról lehet tovább látogatni a Svédgyufa webshopjára is. Animációkat, és háttérmozgást érdemes figyelni. :)</p>
-                            <a class="btn btn--primary" href="http://apollogum.web02.dev7.gbart.hu/" target="_blank">Tovább az oldalra</a>
-                        </div>
-                    </article>
-                </div>
-
-
-                <div>
-                    <div class="references__img relative">
-
-                        <div class="references__img-wrapper relative">
-                            <div>
-                                <img class="references-desktop" src="images/references/references-desktop.png" alt="Desktop">
-                                <img class="references-img-desktop" src="images/references/references-desktop-03.jpg" alt="References Image Desktop">
-                            </div>
-                            <div class="mobile">
-                                <img class="references-mobile" src="images/references/references-mobile.png" alt="Mobile">
-                                <img class="references-img-mobile" src="images/references/references-mobile-03.jpg" alt="References Image Mobile">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <article class="references__descripition col-12 offset-xl-6 col-xl-6 aos-init aos-animate" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
-                        <div>
-                            <h3>Apollo Energy Gum</h3>
-                            <p>Az oldal a Svéd Gyufa Kft. megbízásából készült. A weboldal egy bizonyos termékbemutató promóciós oldal, valamit erről az oldalról lehet tovább látogatni a Svédgyufa webshopjára is. Animációkat, és háttérmozgást érdemes figyelni. :)</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus culpa ducimus exercitationem fugiat harum in perferendis quam rerum veritatis. Assumenda, officiis, praesentium. Aliquam architecto maxime molestiae natus, nostrum veniam!</p>
                             <a class="btn btn--primary" href="http://apollogum.web02.dev7.gbart.hu/" target="_blank">Tovább az oldalra</a>
                         </div>
                     </article>
@@ -458,11 +390,17 @@
             </p>
 
             <div class="socials">
-                <a href="#" title="email">
+                <a href="mailto:andras.vagner@gmail.com" title="email">
                     <span class="icon-envelope"></span>
+                </a>
+                <a href="tel:06309964393" title="phone">
+                    <span class="icon-phone-square"></span>
+                </a>
+                <a href="http://www.linkedin.com/in/andrás-balázs" target="_blank" title="linekdin">
                     <span class="icon-linkedin-square"></span>
+                </a>
+                <a href="https://www.facebook.com/andras.gomez" target="_blank" title="facebook">
                     <span class="icon-facebook-square"></span>
-                    <span class="icon-twitter-square"></span>
                 </a>
             </div>
         </div>
@@ -506,3 +444,11 @@
         <div class="welcome__profile welcome__profile--bye"></div>
     </div>
 </section>
+
+<div class="under-development">
+    <h2 translate>MESSAGE.NOTREADY.TITLE</h2>
+    <p translate>MESSAGE.NOTREADY</p>
+    <a href="#" class="btn" onclick="$(this).parent().remove();" translate>
+        MESSAGE.NOTREADY.COLSE
+    </a>
+</div>

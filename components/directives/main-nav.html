@@ -1,4 +1,7 @@
 <!-- Main navigation -->
 <header class="header container" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-    <a href="#" class="btn btn--primary" title="Download my full resume">Download my full resume</a>
+    <div class="language-selector" ng-controller="MainController as ctrl">
+        <select ng-options="language | translate for language in ctrl.languages" ng-model="ctrl.language" ng-change="ctrl.updateLanguage()"></select>
+    </div>
+    <a href="#" class="btn btn--primary" title='{{"DOWNLOAD.CV" | translate}}'>{{"DOWNLOAD.CV" | translate}}</a>
 </header>

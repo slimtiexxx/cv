@@ -7,31 +7,23 @@
  */
 ;(function() {
 
-  angular
-    .module('boilerplate')
-    .controller('MainController', MainController);
+    angular
+        .module('boilerplate')
+        .controller('MainController', MainController);
+
+    MainController.$inject = ['LocalStorage', 'QueryService', '$translate', '$scope', '$http'];
 
 
-  MainController.$inject = ['LocalStorage', 'QueryService'];
+  function MainController(LocalStorage, QueryService, $translate) {
 
+      // Language Change Select
+      var ctrl = this;
 
-  function MainController(LocalStorage, QueryService) {
-
-    // 'controller as' syntax
-    var self = this;
-
-
-    ////////////  function definitions
-
-
-    /**
-     * Load some data
-     * @return {Object} Returned object
-     */
-    // QueryService.query('GET', 'posts', {}, {})
-    //   .then(function(ovocie) {
-    //     self.ovocie = ovocie.data;
-    //   });
+      ctrl.language = 'en';
+      ctrl.languages = ['en', 'hu'];
+      ctrl.updateLanguage = function() {
+          $translate.use(ctrl.language);
+      };
   }
 
 
