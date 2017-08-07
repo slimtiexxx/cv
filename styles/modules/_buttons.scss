@@ -20,6 +20,10 @@ Buttons
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 481px) {
+    padding: 0 10px;
+  }
+
   &:hover,
   &:focus {
     color: $color-white;
