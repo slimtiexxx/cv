@@ -51,13 +51,13 @@
 
                 // FIRST
                 "EDUCATION.FIRST.NAME" : "Bernáth Kálmán Commerce High School",
-                "EDUCATION.FIRST.DATE" : "20-07-1990",
+                "EDUCATION.FIRST.DATE" : "01-09-2012 – 07-03-2014",
                 "EDUCATION.FIRST.LOCATION" : "Vác (Hungary)",
                 "EDUCATION.FIRST.DESCRIPTION" : "I learned the basics of commerce and marketing here.",
 
                 // SECOUND
                 "EDUCATION.SECOUND.NAME" : "VIK High School",
-                "EDUCATION.SECOUND.DATE" : "20-07-1990",
+                "EDUCATION.SECOUND.DATE" : "10-03-2014 – 21-06-2017",
                 "EDUCATION.SECOUND.LOCATION" : "Budapest (Hungary)",
                 "EDUCATION.SECOUND.DESCRIPTION" : "I continued my education in Budapest, i took a guided tours that upgraded my communication skills.",
                 "EDUCATION.SECOUND.DESCRIPTION.2" : "Here i graduated.",
@@ -114,13 +114,13 @@
 
                   // FIRST
                   "EDUCATION.FIRST.NAME" : "Bernáth Kálmán Kereskedelmi Középiskola",
-                  "EDUCATION.FIRST.DATE" : "20-07-1990",
+                  "EDUCATION.FIRST.DATE" : "01-09-2012 – 07-03-2014",
                   "EDUCATION.FIRST.LOCATION" : "Vác (Magyarország)",
                   "EDUCATION.FIRST.DESCRIPTION" : "Itt tanultam meg a kereskedelmi, és marketing szabályok alapjait.",
 
                   // SECOUND
                   "EDUCATION.SECOUND.NAME" : "VIK Középiskola",
-                  "EDUCATION.SECOUND.DATE" : "20-07-1990",
+                  "EDUCATION.SECOUND.DATE" : "10-03-2014 – 21-06-2017",
                   "EDUCATION.SECOUND.LOCATION" : "Budapest (Magyarország)",
                   "EDUCATION.SECOUND.DESCRIPTION" : "Budapesten folytattam a tanulmányaimat, túra, és tárlatvezetéseket vezettem, ami fejlesztette kommunikációs készségeimet.",
                   "EDUCATION.SECOUND.DESCRIPTION.2" : "Itt érettségiztem.",
