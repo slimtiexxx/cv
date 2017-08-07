@@ -42,6 +42,7 @@
               // WELCOME
               "WELCOME.TITLE" : "Frontend Developer",
               "DOWNLOAD.CV" : "Download my resume",
+              "DOWNLOAD.PATH": "BALAZS_ANDRAS_EN.pdf",
               "MESSAGE.NOTREADY" : "I'm sorry for the inconveniences caused, but it is expected that the site will be fully completed on August 11, 2017.",
               "MESSAGE.NOTREADY.TITLE" : "Under development",
               "MESSAGE.NOTREADY.COLSE" : "Close",
@@ -105,6 +106,7 @@
               // WELCOME
               "WELCOME.TITLE" : "Frontend Fejlesztő",
               "DOWNLOAD.CV" : "Önéletrajzom letöltése",
+              "DOWNLOAD.PATH": "BALAZS_ANDRAS_HU.pdf",
               "MESSAGE.NOTREADY" : "Sajnálom az okozott kellemetlenségeket, de várhatóan az oldal 2017. augusztus 11.-én fog teljesen elkészülni.",
               "MESSAGE.NOTREADY.TITLE" : "Fejlesztés alatt",
               "MESSAGE.NOTREADY.COLSE" : "Bezár",

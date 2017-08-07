@@ -3,5 +3,5 @@
     <div class="language-selector" ng-controller="MainController as ctrl">
         <select ng-options="language | translate for language in ctrl.languages" ng-model="ctrl.language" ng-change="ctrl.updateLanguage()"></select>
     </div>
-    <a href="#" class="btn btn--primary" title='{{"DOWNLOAD.CV" | translate}}'>{{"DOWNLOAD.CV" | translate}}</a>
+    <a href="/files/{{'DOWNLOAD.PATH' | translate}}" target="_blank" class="btn btn--primary" title='{{"DOWNLOAD.CV" | translate}}'>{{"DOWNLOAD.CV" | translate}}</a>
 </header>
