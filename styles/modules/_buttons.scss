@@ -13,7 +13,7 @@ Buttons
   text-transform: uppercase;
   background-color: $color-beige;
   border: 1px solid $color-white;
-  color: $color-white;
+  color: $color-white !important;
   border-radius: $project-default-border-radius;
   font-weight: bold;
   display: flex;
